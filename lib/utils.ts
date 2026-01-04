@@ -7,7 +7,5 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function getImagePath(src: string) {
-  const isProd = process.env.NODE_ENV === 'production'
-  const basePath = isProd ? '/Corporacion-Deportiva-ISE' : ''
-  return `${basePath}${src.startsWith('/') ? src : `/${src}`}`
+  return src.startsWith('/') ? src : `/${src}`
 }
