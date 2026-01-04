@@ -29,7 +29,7 @@ export default function HomePage() {
 
           <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
             <h1 className="text-5xl md:text-7xl font-bold mb-8 text-balance drop-shadow-md">
-              Excelencia en Voleibol
+              Corporación Deportiva ISE
             </h1>
 
             <div className="max-w-2xl mx-auto space-y-6">
