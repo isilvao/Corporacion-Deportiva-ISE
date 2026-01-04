@@ -9,6 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+import { getImagePath } from "@/lib/utils"
 
 export default function AboutPage() {
   const coaches = [
@@ -58,7 +59,7 @@ export default function AboutPage() {
           <div
             className="absolute inset-0 z-0"
             style={{
-              backgroundImage: "url(/QuienesSomos.jpeg)",
+              backgroundImage: `url(${getImagePath("/QuienesSomos.jpeg")})`,
               backgroundSize: "cover",
               backgroundPosition: "50% 25%",
             }}
@@ -165,7 +166,7 @@ export default function AboutPage() {
                         <div
                           className="h-64 bg-muted"
                           style={{
-                            backgroundImage: `url(${coach.image})`,
+                            backgroundImage: `url(${getImagePath(coach.image)})`,
                             backgroundSize: "cover",
                             backgroundPosition: "center",
                           }}

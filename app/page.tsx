@@ -108,7 +108,7 @@ export default function HomePage() {
                 <Card key={news.id} className="overflow-hidden hover:shadow-lg transition-shadow bg-card w-full md:w-[calc(33.333%-2rem)] max-w-md">
                   <div className="relative h-48 w-full bg-muted">
                     <Image
-                      src={news.image}
+                      src={getImagePath(news.image)}
                       alt={news.title}
                       fill
                       className="object-cover"

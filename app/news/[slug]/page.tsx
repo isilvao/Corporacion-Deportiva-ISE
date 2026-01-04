@@ -6,6 +6,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { notFound } from "next/navigation"
 import { ArrowLeft, Calendar } from "lucide-react"
+import { getImagePath } from "@/lib/utils"
 
 // This is required for static export to work with dynamic routes
 export async function generateStaticParams() {
@@ -52,7 +53,7 @@ export default async function NewsPage({ params }: { params: Promise<{ slug: str
                 <div className="container mx-auto px-4 mb-16">
                     <div className="relative w-full max-w-5xl mx-auto h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
                         <Image
-                            src={post.image}
+                            src={getImagePath(post.image)}
                             alt={post.title}
                             fill
                             className="object-cover"
