@@ -15,7 +15,7 @@ export const newsData: NewsItem[] = [
     title: "Campeonato Nacional Color Fest",
     date: "Enero 2026",
     description: "La corporación inicia su temporada 2026 con la participación en el Campeonato Nacional Color Fest en la ciudad de Medellín con el equipo Infantil",
-    image: "/Noticia1.jpeg",
+    image: "/QuienesSomos.jpeg",
     content: `
   <p>¡Inicia la cuenta regresiva! Nuestra corporación arranca oficialmente su calendario deportivo 2026 enfrentando uno de los retos más importantes a nivel nacional. Nuestro <strong>equipo Infantil</strong> viajará al departamento de Antioquia para hacer su gran debut en el <strong>Campeonato Nacional Color Fest</strong>.</p>
   
