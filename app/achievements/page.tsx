@@ -98,12 +98,12 @@ export default function AchievementsPage() {
   ]
 
   const photos = [
-    { src: "/achievements/images/1.JPG", position: "center" },
-    { src: "/achievements/images/2.JPG", position: "center" },
-    { src: "/achievements/images/3.JPG", position: "center" },
-    { src: "/achievements/images/4.JPG", position: "center" },
+    { src: "/achievements/images/1.jpeg", position: "center" },
+    { src: "/achievements/images/2.jpeg", position: "center" },
+    { src: "/achievements/images/3.jpeg", position: "center" },
+    { src: "/achievements/images/4.jpeg", position: "center" },
     { src: "/achievements/images/5.JPEG", position: "center" },
-    { src: "/achievements/images/6.JPG", position: "50% 10%" },
+    { src: "/achievements/images/6.jpeg", position: "50% 10%" },
     { src: "/achievements/images/7.JPEG", position: "center" },
     { src: "/achievements/images/8.JPEG", position: "center" },
     { src: "/achievements/images/9.JPEG", position: "50% 20%" },
@@ -128,7 +128,7 @@ export default function AchievementsPage() {
           <div
             className="absolute inset-0 z-0"
             style={{
-              backgroundImage: "url(/palmares.jpg)",
+              backgroundImage: "url(/palmares.jpeg)",
               backgroundSize: "cover",
               backgroundPosition: "50% 35%",
             }}

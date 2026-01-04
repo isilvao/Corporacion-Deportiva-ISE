@@ -20,12 +20,12 @@ export default function AboutPage() {
     {
       name: "Aldair Rojas Lozada",
       role: "Entrenador F.I.V.B. Nivel 1",
-      image: "/female-volleyball-coach.jpg",
+      image: "/female-volleyball-coach.jpeg",
     },
     {
       name: "Ivan Hernandez Carrillo",
       role: "Entrenador",
-      image: "/male-volleyball-coach-2.jpg",
+      image: "/male-volleyball-coach-2.jpeg",
     },
     {
       name: "Leonardo Mendez Col",

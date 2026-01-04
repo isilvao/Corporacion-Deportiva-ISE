@@ -202,7 +202,7 @@ export default function StatutesPage() {
           <div
             className="absolute inset-0 z-0"
             style={{
-              backgroundImage: `url(${getImagePath("/Estatuto.jpg")})`,
+              backgroundImage: `url(${getImagePath("/Estatuto.jpeg")})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}

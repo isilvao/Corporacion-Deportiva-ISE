@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Facebook, Instagram, Mail, MapPin, Phone, Youtube } from "lucide-react"
+import { getImagePath } from "@/lib/utils"
 
 export function Footer() {
   return (
@@ -12,7 +13,7 @@ export function Footer() {
             <div className="flex items-center gap-2 mb-4">
               <div className="relative w-10 h-10 rounded-full overflow-hidden">
                 <Image
-                  src="/Logo.png"
+                  src={getImagePath("/Logo.png")}
                   alt="ISE Logo"
                   fill
                   className="object-cover"

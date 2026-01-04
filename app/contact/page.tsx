@@ -36,7 +36,7 @@ export default function ContactPage() {
           <div
             className="absolute inset-0 z-0"
             style={{
-              backgroundImage: `url(${getImagePath("/Contacto.JPG")})`,
+              backgroundImage: `url(${getImagePath("/Contacto.jpeg")})`,
               backgroundSize: "cover",
               backgroundPosition: "50% 35%",
             }}
