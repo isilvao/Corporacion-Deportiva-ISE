@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Clock, Users } from "lucide-react"
+import { getImagePath } from "@/lib/utils"
 
 export default function CategoriesPage() {
   const categories = [
@@ -56,7 +57,7 @@ export default function CategoriesPage() {
           <div
             className="absolute inset-0 z-0"
             style={{
-              backgroundImage: "url(/categories/Categorias.jpeg)",
+              backgroundImage: `url(${getImagePath("/categories/Categorias.jpeg")})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
@@ -81,7 +82,7 @@ export default function CategoriesPage() {
                   <div
                     className="bg-muted w-full"
                     style={{
-                      backgroundImage: `url(${category.image})`,
+                      backgroundImage: `url(${getImagePath(category.image)})`,
                       backgroundSize: "cover",
                       backgroundPosition: category.imagePosition,
                       height: category.imageHeight,

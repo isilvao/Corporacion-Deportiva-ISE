@@ -6,6 +6,7 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Trophy, Users, Target, Calendar } from "lucide-react"
+import { getImagePath } from "@/lib/utils"
 
 export default function HomePage() {
   return (
@@ -18,7 +19,7 @@ export default function HomePage() {
           <div
             className="absolute inset-0 z-0"
             style={{
-              backgroundImage: "url(/Background.jpeg)",
+              backgroundImage: `url(${getImagePath("/Background.jpeg")})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}

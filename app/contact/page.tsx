@@ -10,6 +10,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Youtube } from "lucide-react"
 import { useState } from "react"
+import { getImagePath } from "@/lib/utils"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -35,7 +36,7 @@ export default function ContactPage() {
           <div
             className="absolute inset-0 z-0"
             style={{
-              backgroundImage: "url(/Contacto.JPG)",
+              backgroundImage: `url(${getImagePath("/Contacto.JPG")})`,
               backgroundSize: "cover",
               backgroundPosition: "50% 35%",
             }}

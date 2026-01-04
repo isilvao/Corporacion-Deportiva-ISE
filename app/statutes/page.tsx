@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { FileText, Download } from "lucide-react"
+import { getImagePath } from "@/lib/utils"
 
 export default function StatutesPage() {
   const sections = [
@@ -201,7 +202,7 @@ export default function StatutesPage() {
           <div
             className="absolute inset-0 z-0"
             style={{
-              backgroundImage: "url(/Estatuto.jpg)",
+              backgroundImage: `url(${getImagePath("/Estatuto.jpg")})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}

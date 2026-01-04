@@ -4,6 +4,7 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Card, CardContent } from "@/components/ui/card"
 import { Trophy, Medal, Award } from "lucide-react"
+import { getImagePath } from "@/lib/utils"
 import { useState } from "react"
 
 export default function AchievementsPage() {
@@ -228,7 +229,7 @@ export default function AchievementsPage() {
                     key={i}
                     className="aspect-video bg-muted rounded-lg overflow-hidden hover:scale-105 transition-transform cursor-pointer"
                     style={{
-                      backgroundImage: `url(${photo.src})`,
+                      backgroundImage: `url(${getImagePath(photo.src)})`,
                       backgroundSize: "cover",
                       backgroundPosition: photo.position,
                     }}
@@ -243,7 +244,7 @@ export default function AchievementsPage() {
                 {videos.map((video, i) => (
                   <div key={i} className="aspect-video bg-muted rounded-lg overflow-hidden border border-border shadow-sm">
                     <video
-                      src={video}
+                      src={getImagePath(video)}
                       controls
                       className="w-full h-full object-cover"
                       preload="metadata"
