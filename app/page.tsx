@@ -27,10 +27,19 @@ export default function HomePage() {
           </div>
 
           <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance">Excelencia en Voleibol</h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-primary-foreground/90 text-pretty">
-              Formando campeones con disciplina, pasión y trabajo en equipo desde 2022
-            </p>
+            <h1 className="text-5xl md:text-7xl font-bold mb-8 text-balance drop-shadow-md">
+              Excelencia en Voleibol
+            </h1>
+
+            <div className="max-w-2xl mx-auto space-y-6">
+              <p className="text-xl md:text-2xl font-medium text-primary-foreground/95 leading-relaxed">
+                Formando campeones con disciplina, pasión y trabajo en equipo desde 2022
+              </p>
+
+              <p className="text-lg md:text-xl italic text-primary-foreground/90 font-light">
+                "Integración para unir, Superación para crecer, Éxito para trascender"
+              </p>
+            </div>
           </div>
         </section>
 
@@ -93,9 +102,9 @@ export default function HomePage() {
         <section className="py-16">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold mb-12 text-center">Últimas Noticias</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="flex flex-wrap justify-center gap-8">
               {newsData.map((news) => (
-                <Card key={news.id} className="overflow-hidden hover:shadow-lg transition-shadow bg-card">
+                <Card key={news.id} className="overflow-hidden hover:shadow-lg transition-shadow bg-card w-full md:w-[calc(33.333%-2rem)] max-w-md">
                   <div className="relative h-48 w-full bg-muted">
                     <Image
                       src={news.image}

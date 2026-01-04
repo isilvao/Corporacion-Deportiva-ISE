@@ -1,63 +1,56 @@
 export interface NewsItem {
-    id: string
-    slug: string
-    title: string
-    date: string
-    description: string
-    content: string // HTML or Markdown content
-    image: string
+  id: string
+  slug: string
+  title: string
+  date: string
+  description: string
+  content: string // HTML or Markdown content
+  image: string
 }
 
 export const newsData: NewsItem[] = [
-    {
-        id: "1",
-        slug: "campeonato-regional-2025",
-        title: "Campeonato Regional 2025",
-        date: "Enero 15, 2025",
-        description: "Nuestro equipo Sub-18 obtiene el primer lugar en el torneo regional.",
-        image: "/volleyball-team-celebration.png",
-        content: `
-      <p>Nuestro equipo Sub-18 ha logrado una victoria histórica en el Campeonato Regional 2025, demostrando un nivel de juego excepcional y un espíritu de equipo inquebrantable.</p>
-      <h3>El camino a la victoria</h3>
-      <p>Durante tres días de intensa competencia, nuestros atletas enfrentaron a los mejores equipos de la región. La final fue un partido reñido que se decidió en el quinto set, donde la disciplina táctica y la preparación física marcaron la diferencia.</p>
-      <h3>Jugadores destacados</h3>
-      <p>Queremos felicitar a todos los integrantes del plantel, y hacer una mención especial a nuestro capitán por su liderazgo dentro y fuera de la cancha.</p>
-      <p>¡Este trofeo es solo el comienzo de una gran temporada!</p>
-    `
-    },
-    {
-        id: "2",
-        slug: "nuevas-instalaciones",
-        title: "Nuevas Instalaciones",
-        date: "Diciembre 20, 2024",
-        description: "Inauguramos nuestra cancha techada de última generación.",
-        image: "/indoor-volleyball-court.jpg",
-        content: `
-      <p>Con gran orgullo anunciamos la apertura oficial de nuestro nuevo complejo deportivo techado, diseñado para cumplir con los estándares internacionales de la FIVB.</p>
-      <h3>Características del nuevo complejo</h3>
-      <ul>
-        <li>Superficie sintética de alto impacto para reducir lesiones.</li>
-        <li>Iluminación LED de grado profesional.</li>
-        <li>Gradas con capacidad para 500 espectadores.</li>
-        <li>Vestuarios modernos y climatizados.</li>
-      </ul>
-      <p>Estas instalaciones permitirán que nuestros equipos entrenen bajo cualquier condición climática y nos posicionan como uno de los clubes mejor equipados del país.</p>
-    `
-    },
-    {
-        id: "3",
-        slug: "torneo-de-verano",
-        title: "Torneo de Verano",
-        date: "Diciembre 10, 2024",
-        description: "Inscripciones abiertas para nuestro tradicional torneo de verano.",
-        image: "/volleyball-tournament.jpg",
-        content: `
-      <p>¡Vuelve el evento más esperado del año! El Torneo de Verano ISE 2025 está listo para recibir a equipos de todas las categorías.</p>
-      <h3>Información del evento</h3>
-      <p>El torneo se llevará a cabo del 20 al 25 de Enero en nuestras instalaciones. Contaremos con categorías desde Mini-Voley hasta Mayores, en ramas masculina y femenina.</p>
-      <h3>Inscripciones</h3>
-      <p>Los equipos interesados pueden inscribirse hasta el 10 de Enero. No pierdas la oportunidad de competir contra los mejores y disfrutar de una semana llena de voleibol y camaradería.</p>
-      <p>Contáctanos para más información sobre costos y requisitos.</p>
-    `
-    }
+  {
+    id: "1",
+    slug: "campeonato-nacional-color-fest",
+    title: "Campeonato Nacional Color Fest",
+    date: "Enero 2026",
+    description: "La corporación inicia su temporada 2026 con la participación en el Campeonato Nacional Color Fest en la ciudad de Medellín con el equipo Infantil",
+    image: "/Noticia1.JPG",
+    content: `
+  <p>¡Inicia la cuenta regresiva! Nuestra corporación arranca oficialmente su calendario deportivo 2026 enfrentando uno de los retos más importantes a nivel nacional. Nuestro <strong>equipo Infantil</strong> viajará al departamento de Antioquia para hacer su gran debut en el <strong>Campeonato Nacional Color Fest</strong>.</p>
+  
+  <hr />
+
+  <h3>📍 Información del Torneo</h3>
+  <ul>
+    <li><strong>Fechas:</strong> Del 11 al 14 de enero de 2026.</li>
+    <li><strong>Sede:</strong> Polideportivo Sur de Envigado, Antioquia.</li>
+    <li><strong>Nivel:</strong> Competencia contra los mejores clubes de Colombia.</li>
+    <li><strong>Hito:</strong> Es nuestra primera participación oficial en este prestigioso certamen.</li>
+  </ul>
+
+  <h3>📋 Nuestra Delegación</h3>
+  <p>El equipo ha pasado por un proceso de preparación intensa para representar con orgullo nuestros colores. El grupo está conformado por:</p>
+  <ul>
+    <li><strong>Staff Técnico:</strong> Liderado por el profesor <strong>Ivan Silva Monsalve</strong> y el asistente <strong>Aldair Rojas Lozada</strong>.</li>
+    <li><strong>Atletas:</strong> 10 deportistas seleccionados del semillero.</li>
+    <li><strong>Total:</strong> Una delegación de 12 integrantes comprometidos con la excelencia deportiva.</li>
+  </ul>
+
+  <hr />
+
+  <h3>🎥 ¡Apóyanos en Vivo!</h3>
+  <p>No queremos que te pierdas ni un segundo de la acción. Estaremos transmitiendo los encuentros y compartiendo el día a día de nuestros deportistas a través de nuestras plataformas digitales:</p>
+  
+  <blockquote>
+    <strong>Transmisión oficial:</strong> Sigue cada partido en nuestra página de Facebook haciendo clic aquí: 
+    <br />
+    <a href="https://web.facebook.com/p/Corporaci%C3%B3n-Deportiva-ISE-100062486202456/?locale=es_LA&_rdc=1&_rdr" target="_blank" rel="noopener noreferrer" style="color: #007bff; text-decoration: underline;">
+      <strong>Corporación Deportiva ISE - Facebook Oficial</strong>
+    </a>
+  </blockquote>
+  
+  <p>¡Le deseamos el mayor de los éxitos a nuestro semillero en esta experiencia inolvidable en la ciudad de la eterna primavera!</p>
+`
+  },
 ]

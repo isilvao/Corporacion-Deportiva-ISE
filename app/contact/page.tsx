@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { MapPin, Phone, Mail, Clock, Facebook, Instagram } from "lucide-react"
+import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Youtube } from "lucide-react"
 import { useState } from "react"
 
 export default function ContactPage() {
@@ -35,9 +35,9 @@ export default function ContactPage() {
           <div
             className="absolute inset-0 z-0"
             style={{
-              backgroundImage: "url(/placeholder.svg?height=400&width=1920&query=sports+facility+volleyball+court)",
+              backgroundImage: "url(/Contacto.JPG)",
               backgroundSize: "cover",
-              backgroundPosition: "center",
+              backgroundPosition: "50% 35%",
             }}
           >
             <div className="absolute inset-0 bg-primary/80" />
@@ -54,156 +54,74 @@ export default function ContactPage() {
         {/* Contact Info & Form */}
         <section className="py-16">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {/* Contact Information */}
-              <div className="lg:col-span-1 space-y-6">
-                <Card>
-                  <CardContent className="p-6">
-                    <MapPin className="h-8 w-8 text-accent mb-4" />
-                    <h3 className="font-bold text-lg mb-2">Ubicación</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">
-                      Instalaciones Deportivas ISE
-                      <br />
-                      Calle 123 #45-67
-                      <br />
-                      Ciudad, Colombia
-                    </p>
-                  </CardContent>
-                </Card>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
 
-                <Card>
-                  <CardContent className="p-6">
-                    <Phone className="h-8 w-8 text-accent mb-4" />
-                    <h3 className="font-bold text-lg mb-2">Teléfono</h3>
-                    <p className="text-muted-foreground text-sm">+57 300 123 4567</p>
-                    <p className="text-muted-foreground text-sm">+57 (1) 234 5678</p>
-                  </CardContent>
-                </Card>
+              <Card>
+                <CardContent className="p-6">
+                  <Phone className="h-8 w-8 text-accent mb-4" />
+                  <h3 className="font-bold text-lg mb-2">Teléfono</h3>
+                  <p className="text-muted-foreground text-sm">+57 300 207 1818</p>
+                </CardContent>
+              </Card>
 
-                <Card>
-                  <CardContent className="p-6">
-                    <Mail className="h-8 w-8 text-accent mb-4" />
-                    <h3 className="font-bold text-lg mb-2">Email</h3>
-                    <p className="text-muted-foreground text-sm">info@cdise.com</p>
-                    <p className="text-muted-foreground text-sm">inscripciones@cdise.com</p>
-                  </CardContent>
-                </Card>
+              <Card>
+                <CardContent className="p-6">
+                  <Mail className="h-8 w-8 text-accent mb-4" />
+                  <h3 className="font-bold text-lg mb-2">Email</h3>
+                  <p className="text-muted-foreground text-sm">corporaciondeportivaise@gmail.com</p>
+                </CardContent>
+              </Card>
 
-                <Card>
-                  <CardContent className="p-6">
-                    <Clock className="h-8 w-8 text-accent mb-4" />
-                    <h3 className="font-bold text-lg mb-2">Horario</h3>
-                    <p className="text-muted-foreground text-sm">
-                      Lunes - Viernes: 8:00 AM - 8:00 PM
-                      <br />
-                      Sábados: 8:00 AM - 2:00 PM
-                      <br />
-                      Domingos: Cerrado
-                    </p>
-                  </CardContent>
-                </Card>
+              <Card>
+                <CardContent className="p-6">
+                  <h3 className="font-bold text-lg mb-4">Redes Sociales</h3>
+                  <div className="flex gap-4">
+                    <a
+                      href="https://facebook.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-10 h-10 bg-accent rounded-full flex items-center justify-center hover:bg-accent/80 transition-colors"
+                      aria-label="Facebook"
+                    >
+                      <Facebook className="h-5 w-5 text-accent-foreground" />
+                    </a>
+                    <a
+                      href="https://instagram.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-10 h-10 bg-accent rounded-full flex items-center justify-center hover:bg-accent/80 transition-colors"
+                      aria-label="Instagram"
+                    >
+                      <Instagram className="h-5 w-5 text-accent-foreground" />
+                    </a>
+                    <a
+                      href="https://www.youtube.com/@corporaciondeportivaise6069"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-10 h-10 bg-accent rounded-full flex items-center justify-center hover:bg-accent/80 transition-colors"
+                      aria-label="YouTube"
+                    >
+                      <Youtube className="h-5 w-5 text-accent-foreground" />
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
 
-                <Card>
-                  <CardContent className="p-6">
-                    <h3 className="font-bold text-lg mb-4">Redes Sociales</h3>
-                    <div className="flex gap-4">
-                      <a
-                        href="https://facebook.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-10 h-10 bg-accent rounded-full flex items-center justify-center hover:bg-accent/80 transition-colors"
-                        aria-label="Facebook"
-                      >
-                        <Facebook className="h-5 w-5 text-accent-foreground" />
-                      </a>
-                      <a
-                        href="https://instagram.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-10 h-10 bg-accent rounded-full flex items-center justify-center hover:bg-accent/80 transition-colors"
-                        aria-label="Instagram"
-                      >
-                        <Instagram className="h-5 w-5 text-accent-foreground" />
-                      </a>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
-
-              {/* Contact Form */}
-              <div className="lg:col-span-2">
-                <Card>
-                  <CardContent className="p-8">
-                    <h2 className="text-2xl font-bold mb-6">Envíanos un Mensaje</h2>
-                    <form onSubmit={handleSubmit} className="space-y-6">
-                      <div>
-                        <label htmlFor="name" className="block text-sm font-medium mb-2">
-                          Nombre Completo
-                        </label>
-                        <Input
-                          id="name"
-                          type="text"
-                          placeholder="Tu nombre"
-                          value={formData.name}
-                          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                          required
-                        />
-                      </div>
-
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                          <label htmlFor="email" className="block text-sm font-medium mb-2">
-                            Correo Electrónico
-                          </label>
-                          <Input
-                            id="email"
-                            type="email"
-                            placeholder="tu@email.com"
-                            value={formData.email}
-                            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                            required
-                          />
-                        </div>
-
-                        <div>
-                          <label htmlFor="phone" className="block text-sm font-medium mb-2">
-                            Teléfono
-                          </label>
-                          <Input
-                            id="phone"
-                            type="tel"
-                            placeholder="+57 300 123 4567"
-                            value={formData.phone}
-                            onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                          />
-                        </div>
-                      </div>
-
-                      <div>
-                        <label htmlFor="message" className="block text-sm font-medium mb-2">
-                          Mensaje
-                        </label>
-                        <Textarea
-                          id="message"
-                          placeholder="¿En qué podemos ayudarte?"
-                          rows={6}
-                          value={formData.message}
-                          onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                          required
-                        />
-                      </div>
-
-                      <Button type="submit" size="lg" className="w-full">
-                        Enviar Mensaje
-                      </Button>
-                    </form>
-                  </CardContent>
-                </Card>
-              </div>
+            {/* WhatsApp CTA */}
+            <div className="mt-16 text-center">
+              <h2 className="text-3xl font-bold mb-4">Envíanos un mensaje</h2>
+              <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
+                ¿Tienes alguna duda o quieres inscribirte? Contáctanos directamente por WhatsApp.
+              </p>
+              <Button size="lg" className="bg-green-600 hover:bg-green-700" asChild>
+                <a href="https://wa.me/573002071818" target="_blank" rel="noopener noreferrer">
+                  Chat en WhatsApp
+                </a>
+              </Button>
             </div>
           </div>
         </section>
-
         {/* Map */}
         <section className="py-16 bg-secondary">
           <div className="container mx-auto px-4">
@@ -211,7 +129,7 @@ export default function ContactPage() {
             <div className="max-w-6xl mx-auto">
               <div className="aspect-video bg-muted rounded-lg overflow-hidden">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.8157535255785!2d-74.07209708523654!3d4.624335596614134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a2c4b5c7e1f%3A0x1f2b3c4d5e6f7a8b!2sBogot%C3%A1%2C%20Colombia!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.967059452657!2d-72.49538092426535!3d7.898510305657899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6645a1ac5d6439%3A0x9ef794178c961f0d!2sCorporaci%C3%B3n%20Deportiva%20Ise!5e0!3m2!1ses-419!2sco!4v1767498564598!5m2!1ses-419!2sco"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

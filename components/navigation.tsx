@@ -46,9 +46,6 @@ export function Navigation() {
                 {link.label}
               </Link>
             ))}
-            <Button variant="secondary" size="sm">
-              Únete Ahora
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -70,9 +67,6 @@ export function Navigation() {
                 {link.label}
               </Link>
             ))}
-            <Button variant="secondary" size="sm" className="w-full mt-4">
-              Únete Ahora
-            </Button>
           </div>
         )}
       </div>

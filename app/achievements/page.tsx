@@ -11,50 +11,110 @@ export default function AchievementsPage() {
 
   const achievements = [
     {
-      year: "2022",
-      title: "Campeonato Nacional Sub-18",
-      category: "Primer Lugar",
+      year: "2025",
+      title: "International Volleyball Cup, Medellín",
+      category: "Pre-Mini",
+      position: "Campeones",
+      icon: Trophy,
+    },
+    {
+      year: "2025",
+      title: "Torneo Corazonista, Barranquilla",
+      category: "Mini",
+      position: "Sub-campeones",
+      icon: Trophy,
+    },
+    {
+      year: "2025",
+      title: "U-17, Linorvol",
+      category: "Menores",
+      position: "Campeones",
+      icon: Trophy,
+    },
+    {
+      year: "2025",
+      title: "Ciudad Dulce, Barichara",
+      category: "Benjamin",
+      position: "Campeones",
       icon: Trophy,
     },
     {
       year: "2024",
-      title: "Torneo Regional Senior",
-      category: "Campeones",
+      title: "Ciudad Dulce, Barichara",
+      category: "Mini",
+      position: "Sub-campeones",
+      icon: Trophy,
+    },
+    {
+      year: "2024",
+      title: "Ciudad Dulce, Barichara",
+      category: "Benjamin",
+      position: "Campeones",
+      icon: Trophy,
+    },
+    {
+      year: "2024",
+      title: "Torneo la Hormiga, Bucaramanga",
+      category: "Menores",
+      position: "Sub-campeones",
+      icon: Trophy,
+    },
+    {
+      year: "2024",
+      title: "Ciudad Mitrada, Pamplona",
+      category: "Mini",
+      position: "Campeones",
+      icon: Trophy,
+    },
+    {
+      year: "2024",
+      title: "Internacional Volleyball Cup, Medellín",
+      category: "Pre-Mini",
+      position: "Sub-campeones",
       icon: Trophy,
     },
     {
       year: "2023",
-      title: "Copa Departamental Sub-16",
-      category: "Primer Lugar",
-      icon: Medal,
+      title: "Copa Pamplona",
+      category: "Menores",
+      position: "Campeones",
+      icon: Trophy,
     },
     {
       year: "2023",
-      title: "Mejor Club del Año",
-      category: "Reconocimiento Regional",
-      icon: Award,
+      title: "Torneo IMRD",
+      category: "Infantil",
+      position: "Campeones",
+      icon: Trophy,
     },
     {
       year: "2022",
-      title: "Campeonato Nacional Sub-16",
-      category: "Subcampeones",
-      icon: Medal,
-    },
-    {
-      year: "2022",
-      title: "Torneo Intercolegial",
-      category: "Campeones Invictos",
+      title: "Torneo de la Amistad",
+      position: "Campeones",
+      category: "Infantil",
       icon: Trophy,
     },
   ]
 
   const photos = [
-    "/volleyball-trophy-celebration.jpg",
-    "/volleyball-team-medals.jpg",
-    "/volleyball-championship-podium.jpg",
-    "/volleyball-victory-moment.jpg",
-    "/volleyball-team-trophy-photo.jpg",
-    "/volleyball-award-ceremony.jpg",
+    { src: "/achievements/images/1.JPG", position: "center" },
+    { src: "/achievements/images/2.JPG", position: "center" },
+    { src: "/achievements/images/3.JPG", position: "center" },
+    { src: "/achievements/images/4.JPG", position: "center" },
+    { src: "/achievements/images/5.JPEG", position: "center" },
+    { src: "/achievements/images/6.JPG", position: "50% 10%" },
+    { src: "/achievements/images/7.JPEG", position: "center" },
+    { src: "/achievements/images/8.JPEG", position: "center" },
+    { src: "/achievements/images/9.JPEG", position: "50% 20%" },
+    { src: "/achievements/images/10.JPEG", position: "center" },
+    { src: "/achievements/images/11.JPEG", position: "center" },
+    { src: "/achievements/images/12.JPEG", position: "center" },
+    { src: "/achievements/images/13.JPEG", position: "50% 40%" },
+    { src: "/achievements/images/14.JPEG", position: "center" },
+  ]
+
+  const videos = [
+    "/achievements/video/1.mp4"
   ]
 
   return (
@@ -99,6 +159,7 @@ export default function AchievementsPage() {
                         <div className="text-sm font-bold text-accent mb-1">{achievement.year}</div>
                         <h3 className="font-bold text-lg mb-1">{achievement.title}</h3>
                         <p className="text-sm text-muted-foreground">{achievement.category}</p>
+                        <p className="text-sm text-muted-foreground">{achievement.position}</p>
                       </div>
                     </div>
                   </CardContent>
@@ -117,15 +178,15 @@ export default function AchievementsPage() {
                 <div className="text-primary-foreground/80">Campeonatos</div>
               </div>
               <div>
-                <div className="text-5xl font-bold mb-2">30+</div>
+                <div className="text-5xl font-bold mb-2">200+</div>
                 <div className="text-primary-foreground/80">Medallas</div>
               </div>
               <div>
-                <div className="text-5xl font-bold mb-2">50+</div>
+                <div className="text-5xl font-bold mb-2">40+</div>
                 <div className="text-primary-foreground/80">Trofeos</div>
               </div>
               <div>
-                <div className="text-5xl font-bold mb-2">14</div>
+                <div className="text-5xl font-bold mb-2">4</div>
                 <div className="text-primary-foreground/80">Años de Éxito</div>
               </div>
             </div>
@@ -167,9 +228,9 @@ export default function AchievementsPage() {
                     key={i}
                     className="aspect-video bg-muted rounded-lg overflow-hidden hover:scale-105 transition-transform cursor-pointer"
                     style={{
-                      backgroundImage: `url(${photo})`,
+                      backgroundImage: `url(${photo.src})`,
                       backgroundSize: "cover",
-                      backgroundPosition: "center",
+                      backgroundPosition: photo.position,
                     }}
                   />
                 ))}
@@ -179,22 +240,16 @@ export default function AchievementsPage() {
             {/* Video Gallery */}
             {selectedMedia === "videos" && (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
-                {[1, 2, 3, 4].map((i) => (
-                  <div key={i} className="aspect-video bg-muted rounded-lg overflow-hidden">
-                    <div
-                      className="w-full h-full flex items-center justify-center"
-                      style={{
-                        backgroundImage: `url(/placeholder.svg?height=400&width=600&query=volleyball+match+highlight+${i})`,
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                      }}
+                {videos.map((video, i) => (
+                  <div key={i} className="aspect-video bg-muted rounded-lg overflow-hidden border border-border shadow-sm">
+                    <video
+                      src={video}
+                      controls
+                      className="w-full h-full object-cover"
+                      preload="metadata"
                     >
-                      <button className="w-16 h-16 bg-primary/80 hover:bg-primary rounded-full flex items-center justify-center transition-colors">
-                        <svg className="w-8 h-8 text-primary-foreground ml-1" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M8 5v14l11-7z" />
-                        </svg>
-                      </button>
-                    </div>
+                      Your browser does not support the video tag.
+                    </video>
                   </div>
                 ))}
               </div>

@@ -11,7 +11,7 @@ export default function CategoriesPage() {
       ageRange: "9-10 años",
       schedule: "Lunes, Miércoles, Viernes 3:30 PM - 6:00 PM",
       description: "Iniciación y fundamentos básicos del voleibol. Enfoque en técnica y trabajo en equipo. Participación en torneos locales, regionales y nacionales",
-      image: "/Benjamin3.jpg",
+      image: "/categories/Benjamin3.jpg",
       imagePosition: "center",
       imageHeight: "300px",
     },
@@ -20,7 +20,7 @@ export default function CategoriesPage() {
       ageRange: "11-12 años",
       schedule: "Lunes, Miércoles, Viernes 3:30 PM - 6:00 PM",
       description: "Desarrollo de habilidades avanzadas y participación en torneos locales, regionales, nacionales e internacionales.",
-      image: "/Mini.jpg",
+      image: "/categories/Mini.jpg",
       imagePosition: "center",
       imageHeight: "300px",
     },
@@ -30,7 +30,7 @@ export default function CategoriesPage() {
       schedule: "Lunes, Miercoles, Viernes 3:30 PM - 6:00 PM",
       scheduleTwo: "Martes, Jueves, Sábado 3:30 PM - 6:00 PM",
       description: "Preparación competitiva de alto nivel. Participación en campeonatos nacionales e internacionales.",
-      image: "/Infantil3.jpg",
+      image: "/categories/Infantil3.jpg",
       imagePosition: "center",
       imageHeight: "300px",
     },
@@ -40,7 +40,7 @@ export default function CategoriesPage() {
       schedule: "Lunes, Miércoles, Viernes 3:30 PM - 6:00 PM",
       scheduleTwo: "Lunes, Martes, Miércoles, Jueves 5:30 PM - 8:00 PM",
       description: "Equipo formativo y competitivo de alto nivel. Participación en campeonatos nacionales e internacionales.",
-      image: "/Juvenil.jpeg",
+      image: "/categories/Juvenil.jpeg",
       imagePosition: "50% 40%",
       imageHeight: "300px",
     },
@@ -56,7 +56,7 @@ export default function CategoriesPage() {
           <div
             className="absolute inset-0 z-0"
             style={{
-              backgroundImage: "url(/Categorias.jpeg)",
+              backgroundImage: "url(/categories/Categorias.jpeg)",
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}

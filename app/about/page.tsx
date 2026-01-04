@@ -2,27 +2,48 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Card, CardContent } from "@/components/ui/card"
 import { Target, Eye, Heart } from "lucide-react"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 
 export default function AboutPage() {
   const coaches = [
     {
-      name: "Ivan Silva",
-      role: "Director Técnico",
+      name: "Ivan Silva Monsalve",
+      role: "Entrenador F.I.V.B Nivel 2",
       image: "/IvanSilva.jpeg",
     },
     {
-      name: "Ana Rodríguez",
-      role: "Entrenadora Sub-18",
+      name: "Aldair Rojas Lozada",
+      role: "Entrenador F.I.V.B. Nivel 1",
       image: "/female-volleyball-coach.jpg",
     },
     {
-      name: "Miguel Torres",
-      role: "Entrenador Sub-16",
+      name: "Ivan Hernandez Carrillo",
+      role: "Entrenador",
       image: "/male-volleyball-coach-2.jpg",
     },
     {
-      name: "Laura Sánchez",
-      role: "Preparadora Física",
+      name: "Leonardo Mendez Col",
+      role: "Entrenador Nacional",
+      image: "/female-fitness-coach.png",
+    },
+    {
+      name: "Juan Carlos Pineda Serrano",
+      role: "Entrenador",
+      image: "/female-fitness-coach.png",
+    },
+    {
+      name: "Jorge Andrés Sandoval Rueda",
+      role: "Entrenador",
+      image: "/female-fitness-coach.png",
+    }, {
+      name: "David Alejandro Gonzales Mendez",
+      role: "Entrenador Nacional",
       image: "/female-fitness-coach.png",
     },
   ]
@@ -129,23 +150,37 @@ export default function AboutPage() {
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
               Nuestro equipo de profesionales altamente calificados y apasionados por el voleibol
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-              {coaches.map((coach, i) => (
-                <Card key={i} className="overflow-hidden">
-                  <div
-                    className="h-64 bg-muted"
-                    style={{
-                      backgroundImage: `url(${coach.image})`,
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                    }}
-                  />
-                  <CardContent className="p-6 text-center">
-                    <h3 className="font-bold text-lg mb-1">{coach.name}</h3>
-                    <p className="text-sm text-accent font-medium">{coach.role}</p>
-                  </CardContent>
-                </Card>
-              ))}
+            <div className="max-w-7xl mx-auto px-12">
+              <Carousel
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+                className="w-full"
+              >
+                <CarouselContent className="-ml-4">
+                  {coaches.map((coach, i) => (
+                    <CarouselItem key={i} className="pl-4 sm:basis-1/2 lg:basis-1/3 xl:basis-1/4">
+                      <Card className="overflow-hidden h-full">
+                        <div
+                          className="h-64 bg-muted"
+                          style={{
+                            backgroundImage: `url(${coach.image})`,
+                            backgroundSize: "cover",
+                            backgroundPosition: "center",
+                          }}
+                        />
+                        <CardContent className="p-6 text-center">
+                          <h3 className="font-bold text-lg mb-1">{coach.name}</h3>
+                          <p className="text-sm text-accent font-medium">{coach.role}</p>
+                        </CardContent>
+                      </Card>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
             </div>
           </div>
         </section>
