@@ -128,7 +128,7 @@ export default function AchievementsPage() {
           <div
             className="absolute inset-0 z-0"
             style={{
-              backgroundImage: "url(/palmares.jpeg)",
+              backgroundImage: `url(${getImagePath("/palmares.jpeg")})`,
               backgroundSize: "cover",
               backgroundPosition: "50% 35%",
             }}
