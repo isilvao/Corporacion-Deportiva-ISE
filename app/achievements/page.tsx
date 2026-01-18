@@ -6,9 +6,11 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Trophy, Medal, Award } from "lucide-react"
 import { getImagePath } from "@/lib/utils"
 import { useState } from "react"
+import { ImageModal } from "@/components/image-modal"
 
 export default function AchievementsPage() {
   const [selectedMedia, setSelectedMedia] = useState<"photos" | "videos">("photos")
+  const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
   const achievements = [
     {
@@ -112,6 +114,17 @@ export default function AchievementsPage() {
     { src: "/achievements/images/12.jpeg", position: "center" },
     { src: "/achievements/images/13.jpeg", position: "50% 40%" },
     { src: "/achievements/images/14.jpeg", position: "center" },
+    { src: "/achievements/images/15.jpeg", position: "center" },
+    { src: "/achievements/images/16.jpeg", position: "center" },
+    { src: "/achievements/images/17.jpeg", position: "center" },
+    { src: "/achievements/images/18.jpeg", position: "center" },
+    { src: "/achievements/images/19.jpeg", position: "center" },
+    { src: "/achievements/images/20.jpeg", position: "center" },
+    { src: "/achievements/images/21.jpeg", position: "center" },
+    { src: "/achievements/images/22.jpeg", position: "center" },
+    { src: "/achievements/images/23.jpeg", position: "center" },
+    { src: "/achievements/images/24.jpeg", position: "center" },
+    { src: "/achievements/images/25.jpeg", position: "center" },
   ]
 
   const videos = [
@@ -233,6 +246,7 @@ export default function AchievementsPage() {
                       backgroundSize: "cover",
                       backgroundPosition: photo.position,
                     }}
+                    onClick={() => setSelectedImage(photo.src)}
                   />
                 ))}
               </div>
@@ -257,6 +271,12 @@ export default function AchievementsPage() {
             )}
           </div>
         </section>
+
+        <ImageModal
+          src={selectedImage}
+          isOpen={!!selectedImage}
+          onClose={() => setSelectedImage(null)}
+        />
       </main>
 
       <Footer />
