@@ -16,37 +16,57 @@ export default function AboutPage() {
     {
       name: "Ivan Silva Monsalve",
       role: "Entrenador F.I.V.B Nivel 2",
-      image: "/IvanSilva.jpeg",
+      image: "/Profes/IvanSilva.jpeg",
+      position: "center"
     },
     {
       name: "Aldair Rojas Lozada",
       role: "Entrenador F.I.V.B. Nivel 1",
-      image: "/female-volleyball-coach.jpeg",
+      image: "/Profes/AldairRojas.jpeg",
+      position: "50% 20%"
     },
     {
       name: "Ivan Hernandez Carrillo",
       role: "Entrenador",
-      image: "/male-volleyball-coach-2.jpeg",
+      image: "/Profes/IvanHernandez.jpeg",
+      position: "center"
     },
     {
-      name: "Leonardo Mendez Col",
+      name: "Leonardo Mendez Coll",
       role: "Entrenador Nacional",
-      image: "/female-fitness-coach.png",
+      image: "/Profes/LeonardoMendez.jpeg",
+      position: "50% 40%"
     },
     {
       name: "Juan Carlos Pineda Serrano",
       role: "Entrenador",
-      image: "/female-fitness-coach.png",
+      image: "/Profes/JuanCarlos.jpeg",
+      position: "50% 20%"
     },
     {
       name: "Jorge Andrés Sandoval Rueda",
       role: "Entrenador",
-      image: "/female-fitness-coach.png",
-    }, {
-      name: "David Alejandro Gonzales Mendez",
-      role: "Entrenador Nacional",
-      image: "/female-fitness-coach.png",
+      image: "/Profes/JorgeAndres.jpeg",
+      position: "50% 30%"
     },
+    {
+      name: "David Alejandro Gonzalez Mendez",
+      role: "Entrenador Nacional",
+      image: "/Profes/DavidGonzalez.jpeg",
+      position: "50% 20%"
+    },
+    {
+      name: "Diego Fernando Rondon Uron",
+      role: "Entrenador Nacional",
+      image: "/Profes/Diego.jpeg",
+      position: "50% 20%"
+    },
+    {
+      name: "Heimmer Samuel Suarez Villamizar",
+      role: "Entrenador",
+      image: "/Profes/HeimmerSuarez.jpeg",
+      position: "50% 20%"
+    }
   ]
 
   return (
@@ -168,7 +188,7 @@ export default function AboutPage() {
                           style={{
                             backgroundImage: `url(${getImagePath(coach.image)})`,
                             backgroundSize: "cover",
-                            backgroundPosition: "center",
+                            backgroundPosition: coach.position,
                           }}
                         />
                         <CardContent className="p-6 text-center">
