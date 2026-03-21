@@ -51,33 +51,39 @@ export default async function NewsPage({ params }: { params: Promise<{ slug: str
 
                 {/* Featured Image */}
                 <div className="container mx-auto px-4 mb-16">
-                    <div className="relative w-full max-w-5xl mx-auto h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+                    <div className="relative w-full max-w-5xl mx-auto h-[400px] md:h-[600px] rounded-3xl overflow-hidden shadow-2xl group border border-white/10">
                         <Image
                             src={getImagePath(post.image)}
                             alt={post.title}
                             fill
-                            className="object-cover"
+                            className="object-cover transition-transform duration-700 group-hover:scale-105"
+                            style={{ objectPosition: post.imagePosition || "center" }}
                             priority
                         />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
                     </div>
                 </div>
 
                 {/* Content */}
-                <article className="container mx-auto px-4 max-w-3xl">
+                <article className="container mx-auto px-4 max-w-4xl">
                     <div
-                        className="prose prose-lg dark:prose-invert prose-headings:text-primary prose-a:text-accent prose-img:rounded-xl mx-auto"
+                        className="prose prose-lg dark:prose-invert prose-headings:text-primary prose-a:text-accent prose-img:rounded-2xl mx-auto prose-p:leading-relaxed prose-strong:text-accent max-w-none"
                         dangerouslySetInnerHTML={{ __html: post.content }}
                     />
                 </article>
 
-                {/* Navigation to other news (optional, simple Implementation) */}
-                <div className="container mx-auto px-4 max-w-3xl mt-20 pt-10 border-t">
-                    <h3 className="text-2xl font-bold mb-6">Más Noticias</h3>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Navigation to other news */}
+                <div className="container mx-auto px-4 max-w-4xl mt-24 pt-16 border-t border-primary/10">
+                    <h3 className="text-3xl font-bold mb-10 text-center">Otras Noticias de Interés</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
                         {newsData.filter(p => p.id !== post.id).slice(0, 2).map((otherPost) => (
-                            <Link key={otherPost.id} href={`/news/${otherPost.slug}`} className="group block border rounded-xl p-4 hover:border-accent transition-colors">
-                                <h4 className="font-bold group-hover:text-accent transition-colors mb-2">{otherPost.title}</h4>
-                                <p className="text-sm text-muted-foreground">{otherPost.date}</p>
+                            <Link key={otherPost.id} href={`/news/${otherPost.slug}`} className="group flex flex-col items-start p-6 rounded-2xl bg-secondary/20 border border-transparent hover:border-accent/30 hover:bg-secondary/40 transition-all duration-300">
+                                <span className="text-xs font-bold text-accent uppercase tracking-wider mb-2">{otherPost.date}</span>
+                                <h4 className="text-xl font-bold group-hover:text-accent transition-colors mb-3 leading-snug">{otherPost.title}</h4>
+                                <p className="text-muted-foreground text-sm line-clamp-2 mb-4">{otherPost.description}</p>
+                                <span className="text-accent font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
+                                    Leer más <ArrowLeft className="h-4 w-4 rotate-180" />
+                                </span>
                             </Link>
                         ))}
                     </div>

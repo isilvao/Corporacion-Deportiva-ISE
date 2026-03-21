@@ -6,6 +6,7 @@ export interface NewsItem {
   description: string
   content: string // HTML or Markdown content
   image: string
+  imagePosition?: string // e.g., "center", "top", "bottom", "75% 25%"
 }
 
 export const newsData: NewsItem[] = [
@@ -16,6 +17,7 @@ export const newsData: NewsItem[] = [
     date: "Marzo 2026",
     description: "La Corporación Deportiva ISE celebra la clasificación de sus tres equipos a la Fase Nacional de Voleibol U13. Con deportistas nacidas entre 2014 y 2018, este hito liderado por el presidente Iván Silva consolida el éxito de su proceso formativo y el apoyo incondicional de las familias.",
     image: "/Noticia4.jpeg",
+    imagePosition: "50% 10%",
     content: `
     <div class="comunicado-container">
     <div class="header-banner">
@@ -34,7 +36,7 @@ export const newsData: NewsItem[] = [
 
         <p>Queremos expresar un agradecimiento especial a todos los padres de familia, quienes con su apoyo incondicional, esfuerzo y confianza hacen posible que cada una de nuestras deportistas continúe creciendo y cumpliendo sus sueños dentro y fuera de la cancha.</p>
 
-        <p>Bajo el liderazgo de nuestro presidente <strong>Iván Silva</strong>, seguimos fortaleciendo un proyecto deportivo que busca formar no solo grandes jugadoras, sino también excelentes personas.</p>
+        <p>Bajo el liderazgo de nuestro presidente <strong>Iván Silva</strong>, seguimos fortalecer un proyecto deportivo que busca formar no solo grandes jugadoras, sino también excelentes personas.</p>
 
         <p>Ahora nos preparamos con ilusión y responsabilidad para representar de la mejor manera a nuestro club y a nuestro departamento en la fase nacional.</p>
     </div>
@@ -54,6 +56,7 @@ export const newsData: NewsItem[] = [
     date: "Marzo 2026",
     description: "La Corporación Deportiva ISE destacó en el torneo Reyes de la Frontera, logrando resultados sobresalientes en sus categorías formativas.",
     image: "/Noticia3.jpeg",
+    imagePosition: "top center",
     content: `
     <div class="card-torneo">
       <div class="header-torneo">
@@ -72,10 +75,6 @@ export const newsData: NewsItem[] = [
           <tr>
             <td><strong>Categoría Infantil</strong></td>
             <td>🏆 Campeones</td>
-          </tr>
-          <tr>
-            <td><strong>Categoría Juvenil</strong></td>
-            <td>📈 Sumando experiencia y preparación</td>
           </tr>
         </table>
 
@@ -97,6 +96,7 @@ export const newsData: NewsItem[] = [
     date: "Enero 2026",
     description: "La corporación finaliza su participación en el Copa Nacional Color Voley en la ciudad de Medellín con el equipo Infantil",
     image: "/Noticia2.jpeg",
+    imagePosition: "center",
     content: `
     <h3>💚🏐 Destacada participación en la III Copa Nacional Color Voley 2026</h3>
 
@@ -109,7 +109,7 @@ export const newsData: NewsItem[] = [
     </p>
 
     <p>
-    Extendemos un agradecimiento muy especial a los <strong>padres de familia</strong>, quienes hacen posible la participación de sus hijas en estos eventos y respaldan de manera constante cada proceso formativo. <em>Gracias por creer y confiar en nosotros.</em> 🏐💚
+    Extendemos un agradecimiento muy especial a los <strong>padres de familia</strong>, quienes fazem posible la participación de sus hijas en estos eventos y respaldan de manera constante cada proceso formativo. <em>Gracias por creer y confiar en nosotros.</em> 🏐💚
     </p>
 
     <p>
@@ -125,6 +125,7 @@ export const newsData: NewsItem[] = [
     date: "Enero 2026",
     description: "La corporación inicia su temporada 2026 con la participación en el Campeonato Nacional Color Fest en la ciudad de Medellín con el equipo Infantil",
     image: "/Noticia1.jpeg",
+    imagePosition: "center",
     content: `
   <p>¡Inicia la cuenta regresiva! Nuestra corporación arranca oficialmente su calendario deportivo 2026 enfrentando uno de los retos más importantes a nivel nacional. Nuestro <strong>equipo Infantil</strong> viajará al departamento de Antioquia para hacer su gran debut en el <strong>Campeonato Nacional Color Fest</strong>.</p>
   

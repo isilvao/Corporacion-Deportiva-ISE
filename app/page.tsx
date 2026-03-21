@@ -100,33 +100,46 @@ export default function HomePage() {
         </section>
 
         {/* Recent News */}
-        <section className="py-16">
+        <section className="py-24 bg-secondary/30">
           <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold mb-12 text-center">Últimas Noticias</h2>
-            <div className="flex flex-wrap justify-center gap-8">
+            <div className="text-center mb-16">
+              <span className="inline-block py-1 px-3 rounded-full bg-accent/10 text-accent font-medium text-sm mb-4">
+                Club de Noticias
+              </span>
+              <h2 className="text-4xl md:text-5xl font-bold">Últimas Noticias</h2>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {newsData.map((news) => (
-                <Card key={news.id} className="overflow-hidden hover:shadow-lg transition-shadow bg-card w-full md:w-[calc(33.333%-2rem)] max-w-md">
-                  <div className="relative h-48 w-full bg-muted">
-                    <Image
-                      src={getImagePath(news.image)}
-                      alt={news.title}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <CardContent className="p-6">
-                    <p className="text-sm text-accent font-medium mb-2">{news.date}</p>
-                    <h3 className="text-xl font-bold mb-2 line-clamp-2">{news.title}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed mb-4 line-clamp-3">
-                      {news.description}
-                    </p>
-                    <Link href={`/news/${news.slug}`}>
-                      <Button variant="link" className="px-0 text-primary p-0 h-auto font-semibold">
-                        Leer más →
-                      </Button>
-                    </Link>
-                  </CardContent>
-                </Card>
+                <Link key={news.id} href={`/news/${news.slug}`} className="group h-full">
+                  <Card className="overflow-hidden h-full border-none shadow-md hover:shadow-xl transition-all duration-300 bg-card flex flex-col group-hover:-translate-y-2">
+                    <div className="relative h-64 w-full bg-muted overflow-hidden">
+                      <Image
+                        src={getImagePath(news.image)}
+                        alt={news.title}
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-110"
+                        style={{ objectPosition: news.imagePosition || "center" }}
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    </div>
+                    <CardContent className="p-8 flex flex-col flex-grow">
+                      <div className="flex items-center gap-2 text-accent font-medium text-sm mb-4">
+                        <Calendar className="h-4 w-4" />
+                        <span>{news.date}</span>
+                      </div>
+                      <h3 className="text-2xl font-bold mb-4 line-clamp-2 group-hover:text-accent transition-colors leading-tight">
+                        {news.title}
+                      </h3>
+                      <p className="text-muted-foreground text-base leading-relaxed mb-6 line-clamp-3 flex-grow">
+                        {news.description}
+                      </p>
+                      <div className="flex items-center gap-2 text-accent font-bold group-hover:gap-3 transition-all duration-300">
+                        Leer más <span className="text-xl">→</span>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </Link>
               ))}
             </div>
           </div>

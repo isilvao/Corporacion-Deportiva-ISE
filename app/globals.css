@@ -120,7 +120,210 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* News Content Custom Styles */
+@layer components {
+  .comunicado-container {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    max-width: 650px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    line-height: 1.6;
+    color: #2c3e50;
+  }
+
+  .header-banner {
+    background: linear-gradient(135deg, #1b5e20 0%, #4caf50 100%);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .header-banner h1 {
+    margin: 0;
+    font-size: 1.6em;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  .emoji-bar {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  .content-body {
+    padding: 35px;
+  }
+
+  .highlight-box {
+    background-color: #f1f8e9;
+    border-left: 5px solid #2e7d32;
+    padding: 15px 20px;
+    margin: 20px 0;
+    font-weight: 500;
+    color: #1b5e20;
+  }
+
+  p {
+    margin-bottom: 18px;
+    text-align: justify;
+  }
+
+  .footer-signature {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-top: 1px solid #eee;
+    text-align: center;
+  }
+
+  .footer-signature strong {
+    color: #1b5e20;
+    display: block;
+    font-size: 1.1em;
+  }
+
+  .valedictory {
+    font-weight: bold;
+    color: #4caf50;
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+
+  .anuncio-ise {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    max-width: 500px;
+    margin: 20px auto;
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-left: 8px solid #4caf50;
+  }
+
+  .banner-logro {
+    background: linear-gradient(135deg, #2e7d32 0%, #66bb6a 100%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .banner-logro h1 {
+    margin: 0;
+    font-size: 1.4em;
+    text-transform: uppercase;
+  }
+
+  .cuerpo-anuncio {
+    padding: 25px;
+    color: #444;
+  }
+
+  .badge-nacional {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    border: 1px dashed #2e7d32;
+  }
+
+  .texto-principal {
+    font-size: 1.05em;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+
+  .firmas {
+    font-size: 0.85em;
+    color: #777;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .icon-volleyball {
+    font-size: 20px;
+  }
+
+  /* Torneo Card Style (News ID 3) - Following Green Theme */
+  .card-torneo {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    max-width: 650px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    color: #2c3e50;
+  }
+
+  .header-torneo {
+    background: linear-gradient(135deg, #2e7d32 0%, #4caf50 100%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .header-torneo h2 {
+    margin: 0;
+    font-size: 1.4em !important;
+    color: white !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .content-torneo {
+    padding: 30px;
+  }
+
+  .results-table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse !important;
+  }
+
+  .results-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+  }
+
+  .results-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  .results-table strong {
+    color: #2e7d32;
+  }
+
+  .footer-torneo {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    font-size: 0.95em;
+    font-style: italic;
+    color: #555;
+  }
+
+  .highlight {
+    color: #2e7d32;
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
   }
 }

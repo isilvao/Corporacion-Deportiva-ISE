@@ -14,6 +14,13 @@ export default function AchievementsPage() {
 
   const achievements = [
     {
+      year: "2026",
+      title: "Torneo Reyes de la Frontera",
+      category: "Mini",
+      position: "Campeones y subcampeones",
+      icon: Trophy,
+    },
+    {
       year: "2025",
       title: "International Volleyball Cup, Medellín",
       category: "Pre-Mini",
@@ -125,6 +132,31 @@ export default function AchievementsPage() {
     { src: "/achievements/images/23.jpeg", position: "center" },
     { src: "/achievements/images/24.jpeg", position: "center" },
     { src: "/achievements/images/25.jpeg", position: "center" },
+    { src: "/achievements/images/26.jpeg", position: "50% 20%" },
+    { src: "/achievements/images/27.jpeg", position: "50% 20%" },
+    { src: "/achievements/images/28.jpeg", position: "center" },
+    { src: "/achievements/images/29.jpeg", position: "center" },
+    { src: "/achievements/images/30.jpeg", position: "center" },
+    { src: "/achievements/images/31.jpeg", position: "center" },
+    { src: "/achievements/images/32.jpeg", position: "center" },
+    { src: "/achievements/images/33.jpeg", position: "center" },
+    { src: "/achievements/images/34.jpeg", position: "center" },
+    { src: "/achievements/images/35.jpeg", position: "center" },
+    { src: "/achievements/images/36.jpeg", position: "center" },
+    { src: "/achievements/images/37.jpeg", position: "center" },
+    { src: "/achievements/images/38.jpeg", position: "center" },
+    { src: "/achievements/images/39.jpeg", position: "center" },
+    { src: "/achievements/images/40.jpeg", position: "center" },
+    { src: "/achievements/images/41.jpeg", position: "center" },
+    { src: "/achievements/images/42.jpeg", position: "center" },
+    { src: "/achievements/images/43.jpeg", position: "center" },
+    { src: "/achievements/images/44.jpeg", position: "center" },
+    { src: "/achievements/images/45.jpeg", position: "center" },
+    { src: "/achievements/images/46.jpeg", position: "center" },
+    { src: "/achievements/images/47.jpeg", position: "center" },
+    { src: "/achievements/images/48.jpeg", position: "center" },
+    { src: "/achievements/images/49.jpeg", position: "center" },
+
   ]
 
   const videos = [
