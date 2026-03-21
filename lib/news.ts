@@ -10,6 +10,87 @@ export interface NewsItem {
 
 export const newsData: NewsItem[] = [
   {
+    id: "4",
+    slug: "torneo-departamental",
+    title: "Participación en el Torneo Departamental",
+    date: "Marzo 2026",
+    description: "La Corporación Deportiva ISE celebra la clasificación de sus tres equipos a la Fase Nacional de Voleibol U13. Con deportistas nacidas entre 2014 y 2018, este hito liderado por el presidente Iván Silva consolida el éxito de su proceso formativo y el apoyo incondicional de las familias.",
+    image: "/Noticia4.jpeg",
+    content: `
+    <div class="comunicado-container">
+    <div class="header-banner">
+        <div class="emoji-bar">🥇 🥈 🥉 🏆</div>
+        <h1>LOGRO HISTÓRICO: RUMBO AL NACIONAL</h1>
+    </div>
+
+    <div class="content-body">
+        <p>La <strong>Corporación Deportiva ISE</strong> sigue creciendo de la mano de su comunidad y hoy celebra un importante logro en su proceso formativo. 💚🏐</p>
+
+        <div class="highlight-box">
+            Gracias al compromiso de nuestras deportistas, el apoyo de los padres de familia y el trabajo constante de nuestro equipo técnico, logramos clasificar a la fase nacional de voleibol categoría U13 con nuestros tres equipos en competencia, integrados por niñas de las categorías 2014, 2015, 2016, 2017 y 2018.
+        </div>
+
+        <p>Este resultado no solo refleja el talento en la cancha, sino también los valores, la disciplina y el sentido de pertenencia que se construyen día a día en cada entrenamiento.</p>
+
+        <p>Queremos expresar un agradecimiento especial a todos los padres de familia, quienes con su apoyo incondicional, esfuerzo y confianza hacen posible que cada una de nuestras deportistas continúe creciendo y cumpliendo sus sueños dentro y fuera de la cancha.</p>
+
+        <p>Bajo el liderazgo de nuestro presidente <strong>Iván Silva</strong>, seguimos fortaleciendo un proyecto deportivo que busca formar no solo grandes jugadoras, sino también excelentes personas.</p>
+
+        <p>Ahora nos preparamos con ilusión y responsabilidad para representar de la mejor manera a nuestro club y a nuestro departamento en la fase nacional.</p>
+    </div>
+
+    <div class="footer-signature">
+        <strong>Corporación Deportiva ISE</strong>
+        <span>Formando deportistas de excelencia</span>
+        <div class="valedictory">¡VAMOS CON TODA! 💪🏐</div>
+    </div>
+</div>
+    `
+  },
+  {
+    id: "3",
+    slug: "torneo-reyes-de-la-frontera",
+    title: "Torneo Reyes de la Frontera",
+    date: "Marzo 2026",
+    description: "La Corporación Deportiva ISE destacó en el torneo Reyes de la Frontera, logrando resultados sobresalientes en sus categorías formativas.",
+    image: "/Noticia3.jpeg",
+    content: `
+    <div class="card-torneo">
+      <div class="header-torneo">
+        <h2>Reyes de la Frontera 🏐</h2>
+      </div>
+
+      <div class="content-torneo">
+        <p>Este fin de semana, la <strong>Corporación Deportiva ISE</strong> vivió una jornada inolvidable de competencia y aprendizaje, demostrando el fruto del trabajo constante en nuestras categorías base.</p>
+
+        <h3>Resultados Destacados:</h3>
+        <table class="results-table">
+          <tr>
+            <td><strong>Categoría Mini</strong></td>
+            <td>🏆 Campeones y 🥈 Subcampeones</td>
+          </tr>
+          <tr>
+            <td><strong>Categoría Infantil</strong></td>
+            <td>🏆 Campeones</td>
+          </tr>
+          <tr>
+            <td><strong>Categoría Juvenil</strong></td>
+            <td>📈 Sumando experiencia y preparación</td>
+          </tr>
+        </table>
+
+        <p>Actualmente, el equipo se encuentra en una fase intensiva de preparación para el <strong>Departamental U13</strong> de la Liga Norte Santandereana de Voleibol, ajustando detalles técnicos y tácticos para los retos del 2026.</p>
+
+        <p class="highlight">¡Un agradecimiento especial a los padres de familia por su apoyo incondicional!</p>
+      </div>
+
+      <div class="footer-torneo">
+        Seguimos creciendo, compitiendo y soñando en grande. 💚🔥
+      </div>
+    </div>
+    `
+  },
+  {
     id: "2",
     slug: "copa-nacional-color-voley",
     title: "Copa Nacional Color Voley",
