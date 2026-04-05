@@ -224,12 +224,12 @@ export default function StatutesPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
               <div>
-                <h2 className="font-bold text-lg mb-1">Solicita el Documento Completo</h2>
-                <p className="text-sm text-muted-foreground">Estatutos actualizados - Versión 2021</p>
+                <h2 className="font-bold text-lg mb-1">Descargar el Documento Completo</h2>
+                <p className="text-sm text-muted-foreground">Estatutos actualizados - Versión 2025</p>
               </div>
               <Button size="lg" variant="default" asChild>
-                <a href="https://wa.me/573002071818" target="_blank" rel="noopener noreferrer">
-                  Solicitar Documento
+                <a href="/Estatutos_Corporacion_Deportiva_ISE.pdf" target="_blank" rel="noopener noreferrer">
+                  Descargar Documento
                 </a>
               </Button>
             </div>
