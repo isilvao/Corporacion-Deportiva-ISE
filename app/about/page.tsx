@@ -26,12 +26,6 @@ export default function AboutPage() {
       position: "50% 20%"
     },
     {
-      name: "Ivan Hernandez Carrillo",
-      role: "Entrenador",
-      image: "/Profes/IvanHernandez.jpeg",
-      position: "center"
-    },
-    {
       name: "Leonardo Mendez Coll",
       role: "Entrenador Nacional",
       image: "/Profes/LeonardoMendez.jpeg",
