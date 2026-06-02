@@ -11,6 +11,41 @@ export interface NewsItem {
 
 export const newsData: NewsItem[] = [
   {
+    id: "5",
+    slug: "campeonato-nacional-interclubes",
+    title: "Campeonato Nacional Interclubes U-15 Femenino",
+    date: "Junio 2026",
+    description: "La Corporación Deportiva ISE, junto al Club Astros, representará al departamento de Norte de Santander en el Campeonato Nacional Interclubes U-15 Femenino 2026, a disputarse del 3 al 8 de junio en Cartagena de Indias.",
+    image: "/Noticia5.jpeg",
+    imagePosition: "center",
+    content: `
+    <div class="comunicado-container">
+    <div class="header-banner">
+        <div class="emoji-bar">🏐 💚 🏐</div>
+        <h1>¡CARTAGENA NOS ESPERA!</h1>
+    </div>
+
+    <div class="content-body">
+        <p>La <strong>Corporación Deportiva ISE</strong> estará presente en el <strong>Campeonato Nacional Interclubes U-15 Femenino 2026</strong>. 🏐💚</p>
+
+        <div class="highlight-box">
+            Junto al Club Astros, representaremos con orgullo al departamento de Norte de Santander, llevando a la cancha el talento, la pasión y el compromiso de nuestras deportistas, quienes han trabajado incansablemente para ganarse este lugar.
+        </div>
+
+        <p>Del <strong>3 al 8 de junio</strong>, en la ciudad de <strong>Cartagena de Indias</strong>, nuestras jugadoras asumirán este gran reto con la ilusión de competir al más alto nivel y dejar en alto el nombre de nuestra región.</p>
+
+        <p>Cada entrenamiento, cada esfuerzo y cada sueño nos han traído hasta aquí. Ahora es momento de competir, aprender y demostrar la grandeza del voleibol nortesantandereano.</p>
+    </div>
+
+    <div class="footer-signature">
+        <strong>Corporación Deportiva ISE</strong>
+        <span>Formando deportistas de excelencia</span>
+        <div class="valedictory">¡VAMOS CON TODA! 💪🏐</div>
+    </div>
+</div>
+    `
+  },
+  {
     id: "4",
     slug: "torneo-departamental",
     title: "Participación en el Torneo Departamental",
