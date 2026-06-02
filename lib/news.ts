@@ -7,6 +7,7 @@ export interface NewsItem {
   content: string // HTML or Markdown content
   image: string
   imagePosition?: string // e.g., "center", "top", "bottom", "75% 25%"
+  imageFit?: string // e.g., "cover" (default) or "contain"
 }
 
 export const newsData: NewsItem[] = [
@@ -18,6 +19,7 @@ export const newsData: NewsItem[] = [
     description: "La Corporación Deportiva ISE, junto al Club Astros, representará al departamento de Norte de Santander en el Campeonato Nacional Interclubes U-15 Femenino 2026, a disputarse del 3 al 8 de junio en Cartagena de Indias.",
     image: "/Noticia5.jpeg",
     imagePosition: "center",
+    imageFit: "contain",
     content: `
     <div class="comunicado-container">
     <div class="header-banner">

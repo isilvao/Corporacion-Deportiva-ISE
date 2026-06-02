@@ -56,7 +56,7 @@ export default async function NewsPage({ params }: { params: Promise<{ slug: str
                             src={getImagePath(post.image)}
                             alt={post.title}
                             fill
-                            className="object-cover transition-transform duration-700 group-hover:scale-105"
+                            className={`${post.imageFit === "contain" ? "object-contain" : "object-cover"} transition-transform duration-700 group-hover:scale-105`}
                             style={{ objectPosition: post.imagePosition || "center" }}
                             priority
                         />
